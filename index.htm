@@ -3,12 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>牛逼网</title>
+    <title>吃啥网</title>
+    <style>
+        body {
+            text-align: center; /* Center-align all text content */
+        }
+
+        header, nav, section, footer {
+            margin: 0 auto; /* Center-align block-level elements */
+            text-align: left; /* Reset text alignment for block-level elements */
+            max-width: 800px; /* Adjust the maximum width of the content */
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            font-size: 24px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <h1>欢迎来到牛逼网！</h1>
+        <h1>欢迎来到吃啥网！</h1>
     </header>
 
     <nav>
@@ -20,14 +39,14 @@
     </nav>
 
     <section>
-        <h2>内容部分</h2>
-        <p>这是一个简单的网页示例。你可以在这里添加你自己的内容。</p>
+        <h2>*</h2>
+        <p>帮助不知道吃啥的人随机选择吃啥</p>
     </section>
 
     <button onclick="decideWhatToEat()">吃什么</button>
 
     <footer>
-        <p>&copy; 2023 牛逼网</p>
+        <p>&copy; 2023 吃啥网</p>
     </footer>
 
     <script>
@@ -36,11 +55,11 @@
         }
 
         function showAboutUs() {
-            alert("关于我们：邵一哲是个sb");
+            alert("关于我们：just a man");
         }
 
         function decideWhatToEat() {
-            var options = ["主校区食堂", "烤肉", "海底捞"];
+            var options = ["主校区食堂", "烤肉", "涮肉","炒菜","米饭","汤面","海底捞","外婆家"];
             var randomIndex = Math.floor(Math.random() * options.length);
             var selectedOption = options[randomIndex];
             alert("今天吃：" + selectedOption);
